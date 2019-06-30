@@ -19,9 +19,9 @@ mongoose.connect(uri, { useNewUrlParser: true }, (err: any) => {
 
 const app: express.Application = express();
 
+app.set("port", 3000);
+
 app.get("/", helloWorld);
 
-app.listen(3000, () => {
-  // tslint:disable-next-line:no-console
-  console.log("Example app listening on port 3000!");
-});
+
+export default app;

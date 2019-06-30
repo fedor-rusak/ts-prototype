@@ -28,7 +28,7 @@ If everything went as expected you can use typescript transpiler and start an ap
 npm start
 ```
 
-After Ctrl+C and stopping you server don't forget to stop MongoDB:
+After stopping your server don't forget to stop MongoDB:
 
 ```
 npm run mongo-stop
@@ -49,3 +49,11 @@ npm run lint
 ```
 
 Fix if linter complains about anything.
+
+Then modify if necessary and run unit tests:
+
+```
+npm test
+```
+
+Good luck!
