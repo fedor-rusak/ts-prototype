@@ -1,8 +1,22 @@
 import express from "express";
+import mongoose from "mongoose";
 
 import { helloWorld } from "./controllers/api";
 
-// Create a new express application instance
+
+const uri: string = "mongodb://127.0.0.1:27017/local";
+
+mongoose.connect(uri, { useNewUrlParser: true }, (err: any) => {
+  if (err) {
+    // tslint:disable-next-line:no-console
+    console.log(err.message);
+  } else {
+    // tslint:disable-next-line:no-console
+    console.log("Succesfully connected to MongoDB!");
+  }
+});
+
+
 const app: express.Application = express();
 
 app.get("/", helloWorld);
