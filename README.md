@@ -36,6 +36,12 @@ npm run mongo-stop
 
 ## Development process
 
+You may want to use some bash aliases to make your life easier:
+
+```
+source bash_aliases.sh
+```
+
 Make the changes you want in \*.ts files. Then run linter:
 
 ```
